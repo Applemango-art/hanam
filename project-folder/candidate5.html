@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>기호 5번 후보 - 한준혁</title>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script src="app.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    .poster {
+      width: 300px;
+      height: auto;
+      margin: 20px auto;
+    }
+    form {
+      margin-bottom: 20px;
+    }
+    textarea, input {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li {
+      background: #f4f4f4;
+      margin: 5px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+    ul li ul {
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>기호 5번 후보 - 한준혁</h1>
+  <img src="images/candidate5.jpg" alt="기호 5번 후보 포스터" class="poster" />
+  <p>기호 5번 후보에 대한 의견과 피드백을 작성해주세요.</p>
+  <form id="opinionForm">
+    <input type="text" id="nameInput" placeholder="이름" required />
+    <textarea id="opinionInput" placeholder="의견을 입력하세요" required></textarea>
+    <button type="button" id="submitButton">의견 제출</button>
+  </form>
+  <h2>제출된 의견</h2>
+  <ul id="opinionList"></ul>
+</body>
+</html>
